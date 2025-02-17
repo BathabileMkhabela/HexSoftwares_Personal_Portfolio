@@ -6,8 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  /* A three-color linear gradient background */
-  background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6BCB77);
+  background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcb77);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,10 +19,10 @@ body {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 500px;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -36,11 +35,12 @@ input {
 }
 
 button {
-  padding: 5px 10px;
-  margin: 5px 0;
+  padding: 8px;
+  margin: 5px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 button:hover {
@@ -64,6 +64,7 @@ button.delete {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 li {
@@ -74,6 +75,7 @@ li {
   margin: 5px 0;
   background-color: #f9f9f9;
   border-radius: 4px;
+  border-bottom: 1px solid #ddd;
 }
 
 li.completed {
@@ -83,6 +85,11 @@ li.completed {
 
 li.read {
   background-color: #d3ffd3;
+}
+
+.due-time {
+  color: #ff6600;
+  font-weight: bold;
 }
 
 #stats {
