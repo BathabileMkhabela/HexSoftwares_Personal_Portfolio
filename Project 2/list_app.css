@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* A three-color linear gradient background */
+  background: linear-gradient(135deg, #FF6B6B, #FFD93D, #6BCB77);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button.edit {
+  background-color: #ffa500;
+  color: white;
+}
+
+button.read {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.delete {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li.read {
+  background-color: #d3ffd3;
+}
+
+#stats {
+  margin: 15px 0;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 16px;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  border: 1px solid #b2dfdb;
+  border-radius: 8px;
+  color: #00796b;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
