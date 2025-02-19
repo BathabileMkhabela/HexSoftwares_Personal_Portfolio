@@ -1,128 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Resume</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .container {
-            width: 800px;
-            background: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .header {
-            text-align: center;
-        }
-        .header h1 {
-            margin: 5px;
-            color: #333;
-        }
-        .header p {
-            font-style: italic;
-            color: #666;
-        }
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            border: 5px solid #4CAF50;
-            border-radius: 5px;
-            display: block;
-            margin: 10px auto;
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 10px;
-        }
-        .contact-info p {
-            margin: 5px;
-        }
-        .contact-info img {
-            width: 16px;
-            vertical-align: middle;
-            margin-right: 5px;
-        }
-        .section {
-            margin-top: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-            color: #333;
-        }
-        .skills-list {
-            list-style: none;
-            padding: 0;
-        }
-        .skills-list li {
-            display: inline-block;
-            width: 30%;
-            margin: 5px 0;
-            color: #333;
-        }
-        .skills-list li::before {
-            content: "✔ ";
-            color: #4CAF50;
-        }
+      body {
+        font-family: "Open Sans", sans-serif;
+        background: linear-gradient(135deg, #ece9e6, #ffffff);
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1000px;
+        background: #fff;
+        padding: 30px;
+        margin: 40px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .header {
+        text-align: center;
+        padding: 20px;
+        background: #f7f7f7;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        margin: 5px;
+        color: #222;
+        font-weight: 600;
+      }
+
+      .header p {
+        font-style: italic;
+        color: #555;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ffffff;
+        border-radius: 100px;
+        display: block;
+        margin: 10px auto;
+      }
+
+      .contact-info {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .contact-info p {
+        margin: 5px;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .contact-info img {
+        width: 16px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      .section {
+        margin-top: 30px;
+      }
+
+      .section h2 {
+        border-bottom: 2px solid #13a8ad;
+        padding-bottom: 5px;
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .skills-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .skills-list li {
+        display: inline-block;
+        width: 30%;
+        margin: 5px 0;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .skills-list li::before {
+        content: "✔ ";
+        color: #000000;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Your Name</h1>
-            <p>Web Developer / Designer</p>
-            <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
-        </div>
+      <div class="header">
+        <h1>Bathabile Mkhabela</h1>
+        <p>Web Developer / Designer</p>
+        <img
+          src="assets/profile.jpeg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+      </div>
 
-        <div class="contact-info">
-            <p><img src="images/location-icon.png" alt="Location"> 555 Street Address, Toledo, Ohio, 43606 U.S.A.</p>
-            <p><img src="images/phone-icon.png" alt="Phone"> (000) 000-0000</p>
-            <p><img src="images/email-icon.png" alt="Email"> your-email@gmail.com</p>
-            <p><img src="images/website-icon.png" alt="Website"> www.your-website.com</p>
-            <p><img src="images/twitter-icon.png" alt="Twitter"> @twitter-screen-name</p>
-        </div>
+      <div class="contact-info">
+        <p>
+          <img src="assets/location.png" alt="Location" /> 117 Kwaggafontein D,
+          Mpumalanga 0458
+        </p>
+        <p><img src="assets/contact.png" alt="Phone" /> (+27) 637-234846</p>
+        <p>
+          <img src="assets/email.png" alt="Email" />
+          bathabilezandile945@gmail.com
+        </p>
+        <p>
+          <img
+            src="assets/website.png"
+            alt="Website"
+          />bathabilezandile94.wixsite.com/my-site-2
+        </p>
+        <p>
+          <img src="assets/linkedin.png" alt="linkedin" /> https://www.linkedin.com/in/bathabile-mkhabela/
+        </p>
+      </div>
 
-        <div class="section">
-            <h2>Profile</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
+      <div class="section">
+        <h2>Profile</h2>
+        <p>
+          As a Junior Web Developer, I bring experse in the JavaScript library
+          React.js, along with proficiency in Java, HTML, CSS, and JavaScript
+          programming. I am skilled in developing and maintaining responsive web
+          applicaons, focused on enhancing user experience and adept at
+          debugging and troubleshoong issues. My technical acumen and
+          problem-solving abilies enable me to deliver high-quality soluo
+        </p>
+      </div>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>XHTML</li>
-                <li>HTML5</li>
-                <li>PHP</li>
-                <li>JavaScript</li>
-                <li>Magento</li>
-                <li>WordPress</li>
-                <li>CSS</li>
-                <li>MySQL</li>
-                <li>jQuery</li>
-                <li>CMS</li>
-                <li>Photoshop</li>
-            </ul>
-        </div>
+      <div class="section">
+        <h2>Work Experience</h2>
+        <p><strong>Web Developer/Designer</strong>(July 2024 - January 2025)</p>
+        <p>ICEP</p>
+        <p>
+          •Developed We-Mentor, a digital system for managing registers,
+          reports, and providing students easy access to module-specific
+          mentors, including the ability to book mentoring sessions.
+        </p>
+        <br />
+        <p><strong>Academic Mentor</strong>(February 2023 - July 2024)</p>
+        <p>Tshwane University of Technology</p>
+        <p>
+          • Provided tailored guidance, support and resources to help students
+          navigate their academic journeys.Provided one-on-one mentoring,
+          academic advice and developing strategies to enhance learning and
+          performance.
+        </p>
+      </div>
 
-        <div class="section">
-            <h2>Experience</h2>
-            <p><strong>Web Developer / Designer</strong></p>
-            <p>Company Name 1</p>
-            <p>February 2009 - Present</p>
-        </div>
+      <div class="section">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+          <li>React</li>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>MySQL</li>
+          <li>C#</li>
+          <li>Photoshop</li>
+          <li>Adobe After Effets</li>
+          <li>Blender</li>
+          <li>Unity</li>
+        </ul>
+      </div>
 
+      <div class="section">
+        <h2>Soft Skills</h2>
+        <ul class="skills-list">
+          <li>Effective Communication</li>
+          <li>Teamwork</li>
+          <li>Problem solving</li>
+          <li>adaptbility</li>
+          <li>Time management</li>
+          <li>Leadership</li>
+        </ul>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
