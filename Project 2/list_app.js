@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const taskList = document.getElementById("taskList");
   const statsDiv = document.getElementById("stats");
 
-  // Load tasks from local storage
+  // Loading tasks from local storage
   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-  // Render tasks and update stats
+  // Rendering tasks and update stats
   function renderTasks() {
     taskList.innerHTML = "";
     tasks.forEach((task, index) => {
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateStats();
   }
 
-  // Add a new task
+  // Adding a new task
   function addTask() {
     const taskName = taskInput.value.trim();
     const taskDueTime = taskTime.value;
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderTasks();
   }
 
-  // Mark a task as read/unread
+  // Mark a task as complete/incomplete
   function markAsRead(index) {
     tasks[index].read = !tasks[index].read;
     saveTasks();
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     renderTasks();
   }
 
-  // Save tasks to localStorage
+  // Saving tasks to localStorage
   function saveTasks() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }
